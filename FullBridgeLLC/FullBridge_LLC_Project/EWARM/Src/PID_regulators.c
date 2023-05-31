@@ -457,7 +457,7 @@ if (wIntegral_sum_temp < 0)
   
    wtemp = wError - PID_Struct->wPreviousError;
    wDifferential_Term = PID_Struct->hKd_Gain * wtemp;
-   PID_Struct->wPreviousError = wError;    // store value 
+   PID_Struct->wPreviousError = wError;    // store value of the error to previous error          
    }
    wOutput_32 = (wProportional_Term/PID_Struct->hKp_Divisor+ 
                  PID_Struct->wIntegral/PID_Struct->hKi_Divisor + 
